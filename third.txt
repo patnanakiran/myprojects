@@ -30,7 +30,8 @@ user.email=patnanakiran@gmail.com
 
 Kiran@Kiran-PC MINGW64 ~
 $ git config user.email
-patnanakiran@gmail.com
+patnanakiran@gmail.com   
+
 
 Kiran@Kiran-PC MINGW64 ~
 $ git help
@@ -206,5 +207,5 @@ nothing to commit, working tree clean
 
 
 
-
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
 
