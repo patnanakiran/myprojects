@@ -1,11 +1,11 @@
 Kiran@Kiran-PC MINGW64 ~
-$ git  config --global user.name "Kiran kumar"
+$ git  config --global user.name "Kiran kumar"                  //configuring username
 
 Kiran@Kiran-PC MINGW64 ~
 $ ^C
 
 Kiran@Kiran-PC MINGW64 ~
-$ git config --global user.email "patnanakiran@gmail.com"
+$ git config --global user.email "patnanakiran@gmail.com"    //configuring email
 
 Kiran@Kiran-PC MINGW64 ~
 $ git config --list
