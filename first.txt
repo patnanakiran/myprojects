@@ -154,8 +154,31 @@ drwxr-xr-x 1 Kiran 197121 0 Mar 30 12:33 ../
 drwxr-xr-x 1 Kiran 197121 0 Mar 30 12:40 .git/
 
 
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git add .                                                  //add files 
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git commit -m "first commit"                                   //saveponit
+[master (root-commit) 2660c94] first commit
+ 1 file changed, 163 insertions(+)
+ create mode 100644 first.txt
 
 
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git log                                                       //to check commit points     
+commit 2660c94db41e931203dcb44955bc31961afa8ad5 (HEAD -> master)
+Author: Kiran kumar <patnanakiran@gmail.com>
+Date:   Sat Mar 30 12:48:25 2019 +0530
+
+    first commit
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git log  --author="kiran"                                    //to check commit points by specific author
+commit 2660c94db41e931203dcb44955bc31961afa8ad5 (HEAD -> master)
+Author: Kiran kumar <patnanakiran@gmail.com>
+Date:   Sat Mar 30 12:48:25 2019 +0530
+
+    first commit
 
 
 
