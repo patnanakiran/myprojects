@@ -269,3 +269,54 @@ $ git add .
 Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
 $ git mv first.txt home.txt                                 //Renaming a file   
 
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git mv home.txt hi/                                      //moving a file to other location
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    first.txt -> hi/home.txt
+        deleted:    second.txt
+        modified:   third.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   third.txt
+
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git add .
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    first.txt -> hi/home.txt
+        deleted:    second.txt
+        modified:   third.txt
+
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran/hi (master)
+$ git checkout -- home.txt                                     //undo changes (works only if not added to git)
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+
+Press Esc and then type :wq to save and exit.                    // use this for escaping from git commit mode
+
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git reset HEAD home.txt                                     //unstage files
+
+
+
+
