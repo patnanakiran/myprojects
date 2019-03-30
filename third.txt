@@ -207,5 +207,65 @@ nothing to commit, working tree clean
 
 
 
-Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git diff                                                   //git shows changes done in file
+diff --git a/third.txt b/third.txt
+index 1522f71..0ac9e96 100644
+--- a/third.txt
++++ b/third.txt
+@@ -30,7 +30,8 @@ user.email=patnanakiran@gmail.com
+
+ Kiran@Kiran-PC MINGW64 ~
+ $ git config user.email
+-patnanakiran@gmail.com
++patnanakiran@gmail.com
++
+
+ Kiran@Kiran-PC MINGW64 ~
+ $ git help
+@@ -206,5 +207,5 @@ nothing to commit, working tree clean
+
+
+
+-
++Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git rm second.txt                                             //deleting a file
+rm 'second.txt'
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    second.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   third.txt
+
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git add .
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    second.txt
+        modified:   third.txt
+
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git add .
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
+$ git mv first.txt home.txt                                 //Renaming a file   
 
