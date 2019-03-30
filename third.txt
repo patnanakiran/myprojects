@@ -1,0 +1,210 @@
+Kiran@Kiran-PC MINGW64 ~
+$ git  config --global user.name "Kiran kumar"
+
+Kiran@Kiran-PC MINGW64 ~
+$ ^C
+
+Kiran@Kiran-PC MINGW64 ~
+$ git config --global user.email "patnanakiran@gmail.com"
+
+Kiran@Kiran-PC MINGW64 ~
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Kiran kumar
+user.email=patnanakiran@gmail.com
+
+Kiran@Kiran-PC MINGW64 ~
+$ git config user.email
+patnanakiran@gmail.com
+
+Kiran@Kiran-PC MINGW64 ~
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+Kiran@Kiran-PC MINGW64 ~
+$ git help commit
+
+
+Kiran@Kiran-PC MINGW64 ~
+$ pwd
+/c/Users/Kiran
+
+Kiran@Kiran-PC MINGW64 ~
+$ cd  ~                    //for home folder
+
+Kiran@Kiran-PC MINGW64 ~ 
+$ pwd
+/c/Users/Kiran
+
+Kiran@Kiran-PC MINGW64 ~
+$ cd ..
+
+Kiran@Kiran-PC MINGW64 /c/Users
+$ pwd
+/c/Users
+
+Kiran@Kiran-PC MINGW64 /c/Users 
+$ ls
+'All Users'@   Default/  'Default User'@   desktop.ini   Kiran/   Public/
+
+Kiran@Kiran-PC MINGW64 /c/Users
+$ cd kiran
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran
+$ pwd
+/c/Users/kiran
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran
+$ ls                                   //list folders in current path
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran
+$ git init                                                             //initialising git project
+Initialized empty Git repository in C:/Users/Kiran/Desktop/kiran/.git/
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ ls -la                                                   //hidden supported files
+total 12
+drwxr-xr-x 1 Kiran 197121 0 Mar 30 12:40 ./
+drwxr-xr-x 1 Kiran 197121 0 Mar 30 12:33 ../
+drwxr-xr-x 1 Kiran 197121 0 Mar 30 12:40 .git/
+
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git add .                                                  //add files 
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git commit -m "first commit"                                   //saveponit
+[master (root-commit) 2660c94] first commit
+ 1 file changed, 163 insertions(+)
+ create mode 100644 first.txt
+
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git log                                                       //to check commit points     
+commit 2660c94db41e931203dcb44955bc31961afa8ad5 (HEAD -> master)
+Author: Kiran kumar <patnanakiran@gmail.com>
+Date:   Sat Mar 30 12:48:25 2019 +0530
+
+    first commit
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git log  --author="kiran"                                    //to check commit points by specific author
+commit 2660c94db41e931203dcb44955bc31961afa8ad5 (HEAD -> master)
+Author: Kiran kumar <patnanakiran@gmail.com>
+Date:   Sat Mar 30 12:48:25 2019 +0530
+
+    first commit
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git add .
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git commit -m "second"
+[master 6c9807e] second
+ 1 file changed, 23 insertions(+)
+
+Kiran@Kiran-PC MINGW64 /c/Users/kiran/desktop/kiran (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+
+
