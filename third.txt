@@ -269,53 +269,94 @@ $ git add .
 Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
 $ git mv first.txt home.txt                                 //Renaming a file   
 
-Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
-$ git mv home.txt hi/                                      //moving a file to other location
-
-Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
-$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-        renamed:    first.txt -> hi/home.txt
-        deleted:    second.txt
-        modified:   third.txt
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-        modified:   third.txt
 
 
-Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
-$ git add .
-
-Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
-$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-        renamed:    first.txt -> hi/home.txt
-        deleted:    second.txt
-        modified:   third.txt
 
 
-Kiran@Kiran-PC MINGW64 ~/Desktop/kiran/hi (master)
-$ git checkout -- home.txt                                     //undo changes (works only if not added to git)
-
-Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
-$ git commit
-Aborting commit due to empty commit message.
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran ((aa45e63...))
+$ git remote add githubpoint https://github.com/patnanakiran/myprojects.git
+                                                                               //to add git web link to local repository
 
 
-Press Esc and then type :wq to save and exit.                    // use this for escaping from git commit mode
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran ((aa45e63...))
+$ git remote                                                 //verify git web short name
+githubpoint
 
 
-Kiran@Kiran-PC MINGW64 ~/Desktop/kiran (master)
-$ git reset HEAD home.txt                                     //unstage files
+
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/kiran ((aa45e63...))
+$ git push -u githubpoint master                           //adding files to git web
+Username for 'https://github.com': patnanakiran
+Counting objects: 22, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (22/22), 6.05 KiB | 774.00 KiB/s, done.
+Total 22 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/patnanakiran/myprojects.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'githubpoint'.
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project
+$ git clone https://github.com/patnanakiran/myprojects.git         //downloading files from git to local computer using html link
+Cloning into 'myprojects'...
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 22 (delta 7), reused 22 (delta 7), pack-reused 0
+Unpacking objects: 100% (22/22), done.
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project
+$ ls
+myprojects/
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project
+$ cd my projects
+bash: cd: too many arguments
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project
+$ cd myprojects/
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project/myprojects (master)
+$ ls
+hi/  third.txt
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project/myprojects (master)
+$ git remote -v                                                   //getting origin link
+origin  https://github.com/patnanakiran/myprojects.git (fetch)
+origin  https://github.com/patnanakiran/myprojects.git (push)
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project/myprojects (master)
+$ pwd                                                            //finding present working direcory
+/c/Users/Kiran/Desktop/project/myprojects
+
+Kiran@Kiran-PC MINGW64 ~/Desktop/project/myprojects (master)
+$ git pull origin master                                         //refreshing or updating local computer from git web
+From https://github.com/patnanakiran/myprojects
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,86 @@
+<html>
+<head><title>Sign Up</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+<style>
+table{
+box-shadow:6px 6px 4px grey;
+}
+#button{
+background:brown;
+color:white;
+height:30px;
+width:60px;
+opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+<img src="images/signupimage.jpg" align=right height=500 width=600>
+<form action="signupprocess.php" method="post">
+<table bgcolor=#C2B9B9>
+<tr>
+<td colspan=2><font color=brown align=center><h1>Create New Account</h1></font></td>
+</tr>
+<tr>
+<td>Employee Id:-</td>	
+<td><input type="text" name="emp_id">*</td>
+</tr>
+<tr>
+<td>First Name:-</td>
+<td><input type="text" name="f_name"></td>
+</tr>
+<tr>
+<td>Last Name:-</td>
+<td><input type="text" name="l_name"></td>
+</tr>
+<tr>
+<td>Sex:-</td>
+<td><select name="sex">
+<option>male</option>
+<option>female</option>
+</select></td>
+</tr>
+<tr>
+<td>Hostel No:-</td>
+<td>
+<select name="hostel_no">
+<option>BH-1</option>
+<option>BH-2</option>
+<option>BH-3</option>
+<option>BH-4</option>
+<option>BH-5</option>
+<option>BH-6</option>
+<option>BH-7</option>
+<option>BH-8</option>
+<option>BH-9</option>
+<option>LH-1</option>
+<option>LH-2</option>
+<option>LH-3</option>
+<option>LH-4</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Password:-</td>
+<td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td>Confirm Password:-</td>
+<td><input type="password" name="c_password"></td>
+</tr>
+<tr>
+<td>Mobile:-</td>
+<td><input type="text" maxlength="10" name="mob_no"></td>
+</tr>
+<tr>
+<td>Address:-</td>
+<td><textarea Name="address" rows="7" cols="30" name="address"></textarea></td>
+</tr>
+<tr>
+<td align=center colspan=2><input type="submit" value="Sign Up" name="signup" id="button"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

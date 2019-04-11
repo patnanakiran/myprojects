@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+<head><title>Add Student</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+<style>
+body
+{
+background-color:#9cd7a7;
+font-size:18px;
+}
+#button{
+height:40px;
+width:60px;
+opacity: 0.8;
+}
+</style>
+<script type="text/javascript">
+ function PreviewImage() {
+        var oFReader = new FileReader();
+        oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+        oFReader.onload = function (oFREvent) {
+            document.getElementById("uploadPreview").src = oFREvent.target.result;
+        };
+    };
+</script>
+</head>
+<body>
+<header>
+<center>
+<img src="images/logo.png" height=90 width=90>
+<h1>SOA HOSTEL MANAGEMENT</h1>
+</center>
+</header>
+<form action="addstudent.php" method="POST">
+<table frame=box align=center cellpadding=5>
+<tr>
+<th colspan=4><u>Student Details</u></th>
+</tr>
+<tr>
+<td>Date of Admission:-</td>
+<td><input type=date name="date_of_join"></td>
+<td></td>
+<td valign=top rowspan=3 colspan=2>
+	Upload Image<br>
+<img id="uploadPreview" width=150 height=150/><br>
+<input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();" />
+</td>
+</tr>
+<tr>
+<td>Registration No:-<font color="red">*</font></td>
+<td><input type="text" name="regd_no" maxlength=10 required></td>
+</tr>
+<tr>
+<td>Aadhar No:-<font color="red">*</font></td>
+<td><input type="text" name="a_no" required></td>
+</tr>
+<tr>
+<td>Student Name:-</td>
+<td><input type="text" name="s_name" size="30"></td>
+<td>Sex:-
+	<select name="sex">
+		<option>male</option>
+		<option>female</option>
+	</select>
+</td>
+</tr>
+
+<td>
+	Hostel No:-</td><td>
+	<select name="hostel_no">
+		<option>BH-1</option>
+		<option>BH-2</option>
+		<option>BH-3</option>
+		<option>BH-4</option>
+		<option>BH-5</option>
+		<option>BH-6</option>
+		<option>BH-7</option>
+		<option>BH-8</option>
+		<option>BH-9</option>
+		<option>LH-1</option>
+		<option>LH-2</option>
+		<option>LH-3</option>
+		<option>LH-4</option>
+	</select>
+</td> 
+<td>
+	Room No:-<input type="text" size='10' name='room_no'>
+</td>
+<td>	
+	Bed No:-
+	<select name="bed_no">
+		<option>B-01</option>
+		<option>B-02</option>
+		<option>B-03</option>
+		<option>B-04</option>
+	</select>
+</td>
+</tr>
+<tr>
+<td>Branch:-</td><td><input type="text" name="branch" size="20"></td>
+<td>Mobile No:-</td><td><input type="text" name="mob_no" maxlength='10' required></td>
+</tr>
+<tr>
+<td>Email Id:-</td>
+<td><input type="email" name="s_email" required></td>
+</tr>
+<tr>
+<td>Temporary Address:-</td><td>
+	<textarea name="t_address" rows=8 cols=40 >
+	</textarea>
+</td>
+
+<td>Permanent Address:-</td><td>
+	<textarea name="p_address" rows=8 cols=40 required>
+	</textarea>
+</td>
+</tr>
+<tr>
+<th colspan=4><u>Parent and Guardian Details</u></th>
+</tr>
+<tr>
+<td>Father's Name:-</td>
+<td><input type="text" name="f_name"></td>
+<td>Mother's Name:-</td>
+<td><input type="text" name="m_name"></td>
+</tr>
+<tr>
+<td>Father's Email:-</td>
+<td><input type="email" name="p_email"></td>
+<td>Parent's contact:-</td>
+<td><input type="text" name="parent_no" maxlength='10'></td>
+</tr>
+<tr>
+<td>Local Guardian Name:-</td>
+<td><input type="text" name="localg_name"></td>
+<td>Local Guardian Contact:-</td>
+<td><input type="text" name="local_no"></td>
+</tr>
+<tr>
+<td><input type="submit" value="Save" name="submit" id="button"></td>
+<td><input type="button" value="Print" onclick="window.print()" id="button"></td>
+</tr>
+</table>
+</body>
+</html>
